@@ -1,0 +1,49 @@
+This is a simple application to demonstrate the functionality of a service with different
+end points
+
+* The application was created with Spring MVC with Java as programming language.
+* Database used was MySQL to store and retrieve data (default scehma used is moviesdb)
+* application.properties with the credentials of the database with default schema
+
+The application:
+* It has following packages:
+	1.com.moviesdemo: This consists of the spring application which is the driver
+	
+	2.com.moviesdemo.controller: The consists of controller responsible for handling the input
+								 requests and mapping them to provide response
+		* /demo/movie/{id} : displays the movie respective to the id provided as path variable
+		* /demo/show/{id}  : displays the show respective to the id provided as path variable
+		* /demo/search	   : searches the record with given input string in title and display
+						     the respective records matching the input string
+		Extra endpoints:
+		* /demo/add		   : Adds a new record to the movies and shows database
+		* /demo/delete{id} : Deletes the record with the id provided as path variable
+		* /demo/all		   : Returns all the records present in the database
+		
+	note: The endpoints can be tested using postman by providing proper inputs( for extra endpoints )
+	
+	3.com.moviesdemo.model: This consists of the model description with attributes
+		* movie: id, title, synopsis, releasedYear, mediaType
+		
+	4.com.moviesdemo.repository: This consists of the repository for respective models to
+								 interact with database and use custom methods and queries
+
+The data is collected and transformed from Kaggle sources and operations are performed
+to make a larger data set comprising of shows and movies data.
+
+Each record in data is represented as 
+
+   * id(primary key),  title,    synopsis,     released_year,    media_type
+         1			    abc     something         2000           movie/show
+         
+         
+Technologies used: 
+   *Programming Languages: Java, SQL
+   *Databases: MySQL
+   *Frameworks: Spring, Spring boot, JUnit
+   *Build and Version Control: Git, Maven
+ 
+         
+ 
+								 
+								 		
