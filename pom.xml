@@ -4,11 +4,9 @@
                              http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>1.0.0</modelVersion>
 
-    <groupId>com.moviesdemo</groupId>
-    <artifactId>parent</artifactId>
-    <packaging>pom</packaging>
-    <version>1.0</version>
-    <name>Parent Project</name>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>2.0.6.RELEASE</version>
 
     <modules>
         <module>moviesdemo</module>
