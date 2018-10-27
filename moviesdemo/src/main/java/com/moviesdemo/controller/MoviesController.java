@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
@@ -35,19 +36,9 @@ public class MoviesController {
 	private MoviesRepository moviesRepository;
 
 	@PostMapping(path="/add")
-	public @ResponseBody String addNewMovieOrShow (@RequestParam int id, @RequestParam String title
-			, @RequestParam String synopsis, @RequestParam String releasedYear
-			, @RequestParam String mediaType) {
-		// @ResponseBody means the returned String is the response, not a view name
-		// @RequestParam means it is a parameter from the GET or POST request
-
-		Movie n = new Movie();
-		n.setId(id);
-		n.setTitle(title);
-		n.setSynopsis(synopsis);
-		n.setReleasedYear(releasedYear);
-		n.setMediaType(mediaType);
-		moviesRepository.save(n);
+	public @ResponseBody String addNewMovieOrShow (@RequestBody Movie movie) {
+		//Adds a new record into the database
+		moviesRepository.save(movie);
 		return "Saved";
 	}
 	
