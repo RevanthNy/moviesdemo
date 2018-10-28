@@ -12,8 +12,8 @@
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
-		<groupId>com.moviesdemo.app</groupId>
-    		<artifactId>myappparent</artifactId>
+		groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.0.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
