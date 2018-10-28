@@ -11,14 +11,14 @@ The application:
 	
 	2.com.moviesdemo.controller: The consists of controller responsible for handling the input
 								 requests and mapping them to provide response
-		* /demo/movie/{id} : displays the movie respective to the id provided as path variable
-		* /demo/show/{id}  : displays the show respective to the id provided as path variable
-		* /demo/search	   : searches the record with given input string in title and display
+		* /lvlworkshop/movie/{id} : displays the movie respective to the id provided as path variable
+		* /lvlworkshop/show/{id}  : displays the show respective to the id provided as path variable
+		* /lvlworkshop/search	   : searches the record with given input string in title and display
 						     the respective records matching the input string
 		Extra endpoints:
-		* /demo/add		   : Adds a new record to the movies and shows database
-		* /demo/delete{id} : Deletes the record with the id provided as path variable
-		* /demo/all		   : Returns all the records present in the database
+		* /lvlworkshop/add		   : Adds a new record to the movies and shows database
+		* /lvlworkshop/delete{id} : Deletes the record with the id provided as path variable
+		* /lvlworkshop/all		   : Returns all the records present in the database
 		
 	note: The endpoints can be tested using postman by providing proper inputs( for extra endpoints )
 	
