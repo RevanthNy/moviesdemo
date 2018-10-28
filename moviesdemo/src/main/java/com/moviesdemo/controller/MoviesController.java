@@ -28,7 +28,7 @@ import com.moviesdemo.repository.MoviesRepository;
  *
  */
 @Controller    // This means that this class is a Controller
-@RequestMapping(path="/demo") // This means URL's start with /demo (after Application path)
+@RequestMapping(path="/lvlworkshop") // This means URL's start with /demo (after Application path)
 public class MoviesController {
 	 final static Logger logger = LoggerFactory.getLogger(MoviesController.class);
 	@Autowired // This means to get the bean called moviesRepository
